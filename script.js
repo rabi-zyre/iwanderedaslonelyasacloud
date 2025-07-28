@@ -45,7 +45,7 @@ if (rightDaffodil) {
         console.log("Right daffodil clicked!");
         e.stopPropagation();
         console.log("Changing src from:", rightDaffodil.src);
-        rightDaffodil.src = "images/rightbloom.svg";
+        rightDaffodil.src = "svg/rightbloom.svg";
         console.log("Changed src to:", rightDaffodil.src);
         rightDaffodil.classList.add("bloomed");
         console.log("Added bloomed class");
@@ -57,7 +57,7 @@ if (leftDaffodil) {
         console.log("Left daffodil clicked!");
         e.stopPropagation();
         console.log("Changing src from:", leftDaffodil.src);
-        leftDaffodil.src = "images/leftbloom.svg";
+        leftDaffodil.src = "svg/leftbloom.svg";
         console.log("Changed src to:", leftDaffodil.src);
         leftDaffodil.classList.add("bloomed");
         console.log("Added bloomed class");
@@ -134,11 +134,11 @@ function startFinalAnimation() {
     animationStep = 1;
 
     setTimeout(() => {
-        heartElement.src = 'images/hearthalffill.svg';
+        heartElement.src = 'svg/hearthalffill.svg';
     }, 300);
 
     setTimeout(() => {
-        heartElement.src = 'images/heartfill.svg';
+        heartElement.src = 'svg/heartfill.svg';
         heartElement.classList.add('heart-elastic');
     }, 600);
 
@@ -171,7 +171,7 @@ function startFinalAnimation() {
 // Reset animation function (optional)
 function resetAnimation() {
     animationStep = 0;
-    heartElement.src = 'images/heartnotfill.svg';
+    heartElement.src = 'svg/heartnotfill.svg';
     heartElement.classList.remove('heart-elastic', 'heart-fade-out');
     dropContainer.style.display = 'none';
     dropElement.classList.remove('drop-falling');
